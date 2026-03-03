@@ -2,7 +2,7 @@
   "__inputs": [
     {
       "name": "DS_TIBBER_2.0",
-      "label": "Tibber",
+      "label": "tibber",
       "description": "",
       "type": "datasource",
       "pluginId": "yesoreyeram-infinity-datasource",
@@ -448,7 +448,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -498,7 +498,7 @@
         {
           "columns": [
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten - Letzte Stunde",
               "type": "number"
             }
@@ -517,7 +517,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "application/json",
-            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: HOURLY, last: 1) {\n        nodes {\n          from\n          totalCost\n        }\n      }\n    }\n  }\n}\n",
+            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: HOURLY, last: 1) {\n        nodes {\n          from\n          cost\n        }\n      }\n    }\n  }\n}\n",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -549,7 +549,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -599,7 +599,7 @@
         {
           "columns": [
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten - Gestern",
               "type": "string"
             }
@@ -618,7 +618,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "application/json",
-            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: DAILY, last: 1) {\n        nodes {\n          from\n          totalCost\n        }\n      }\n    }\n  }\n}\n",
+            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: DAILY, last: 1) {\n        nodes {\n          from\n          cost\n        }\n      }\n    }\n  }\n}\n",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -632,7 +632,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -682,7 +682,7 @@
         {
           "columns": [
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten - Letzte Woche",
               "type": "number"
             }
@@ -701,7 +701,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "application/json",
-            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: WEEKLY, last: 1) {\n        nodes {\n          from\n          totalCost\n        }\n      }\n    }\n  }\n}\n",
+            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: WEEKLY, last: 1) {\n        nodes {\n          from\n          cost\n        }\n      }\n    }\n  }\n}\n",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -715,7 +715,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -765,7 +765,7 @@
         {
           "columns": [
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten - Letzter Monat",
               "type": "number"
             }
@@ -784,7 +784,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "application/json",
-            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: MONTHLY, last: 1) {\n        nodes {\n          from\n          totalCost\n        }\n      }\n    }\n  }\n}\n",
+            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: MONTHLY, last: 1) {\n        nodes {\n          from\n          cost\n        }\n      }\n    }\n  }\n}\n",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -798,7 +798,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -848,7 +848,7 @@
         {
           "columns": [
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten - Letztes Jahr",
               "type": "number"
             }
@@ -867,7 +867,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "application/json",
-            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: ANNUAL, last: 1) {\n        nodes {\n          from\n          totalCost\n        }\n      }\n    }\n  }\n}\n",
+            "body_graphql_query": "{\n  viewer {\n    homes {\n      consumption(resolution: ANNUAL, last: 1) {\n        nodes {\n          from\n          cost\n        }\n      }\n    }\n  }\n}\n",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -881,7 +881,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -981,7 +981,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1064,7 +1064,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1147,7 +1147,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1230,7 +1230,7 @@
         "type": "yesoreyeram-infinity-datasource",
         "uid": "${DS_TIBBER_2.0}"
       },
-      "description": "Inkl. Gebühren",
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1906,6 +1906,7 @@
             "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
+            "axisSoftMin": 5,
             "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
@@ -2091,6 +2092,7 @@
             "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
+            "axisSoftMin": 5,
             "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
@@ -2492,7 +2494,7 @@
               "type": "timestamp"
             },
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten",
               "type": "number"
             }
@@ -2511,7 +2513,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "text/plain",
-            "body_graphql_query": "{\n  viewer {\n    homes\n    {\n      consumption(resolution: HOURLY, last: ${__to:date:H}) {\n        nodes {\n          from\n          cost\n          totalCost\n        }\n      }\n    }\n  }\n}",
+            "body_graphql_query": "{\n  viewer {\n    homes\n    {\n      consumption(resolution: HOURLY, last: ${__to:date:H}) {\n        nodes {\n          from\n          cost\n          cost\n        }\n      }\n    }\n  }\n}",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -2757,7 +2759,7 @@
               "type": "timestamp"
             },
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten",
               "type": "number"
             }
@@ -2776,7 +2778,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "text/plain",
-            "body_graphql_query": "{\n  viewer {\n    homes\n    {\n      consumption(resolution: DAILY, last: ${__to:date:D}) {\n        nodes {\n          from\n          cost\n          totalCost\n        }\n      }\n    }\n  }\n}",
+            "body_graphql_query": "{\n  viewer {\n    homes\n    {\n      consumption(resolution: DAILY, last: ${__to:date:D}) {\n        nodes {\n          from\n          cost\n          cost\n        }\n      }\n    }\n  }\n}",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -3019,7 +3021,7 @@
               "type": "timestamp"
             },
             {
-              "selector": "totalCost",
+              "selector": "cost",
               "text": "Kosten",
               "type": "number"
             }
@@ -3038,7 +3040,7 @@
           "url": "https://api.tibber.com/v1-beta/gql",
           "url_options": {
             "body_content_type": "text/plain",
-            "body_graphql_query": "{\n  viewer {\n    homes\n    {\n      consumption(resolution: MONTHLY, last: ${__to:date:M}) {\n        nodes {\n          from\n          cost\n          totalCost\n        }\n      }\n    }\n  }\n}",
+            "body_graphql_query": "{\n  viewer {\n    homes\n    {\n      consumption(resolution: MONTHLY, last: ${__to:date:M}) {\n        nodes {\n          from\n          cost\n          cost\n        }\n      }\n    }\n  }\n}",
             "body_type": "graphql",
             "data": "",
             "method": "POST"
@@ -3073,6 +3075,6 @@
   "timezone": "browser",
   "title": "Tibber - Infinity",
   "uid": "edftigk3lvlkwe",
-  "version": 2,
+  "version": 5,
   "weekStart": "monday"
 }
